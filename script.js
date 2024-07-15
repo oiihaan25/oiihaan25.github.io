@@ -251,9 +251,11 @@ $(document).ready(function () {
   });
 
   //clicar el logo, recargar
- $(".divLogo").click(function () {
+ if ($(window).width() <= 800) {
+  $(".divLogo").click(function () {
     $(window).scrollTop(0);
   });
+  }
 
   $(window).on("beforeunload", function () {
     $(window).scrollTop(0);
