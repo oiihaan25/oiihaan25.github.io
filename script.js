@@ -251,8 +251,8 @@ $(document).ready(function () {
   });
 
   //clicar el logo, recargar
-  $(".divLogo").click(function () {
-    window.location.reload();
+ $(".divLogo").click(function () {
+    $(window).scrollTop(0);
   });
 
   $(window).on("beforeunload", function () {
